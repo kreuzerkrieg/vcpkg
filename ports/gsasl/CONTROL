@@ -1,0 +1,4 @@
+Source: gsasl
+Version: 1.8.1
+Homepage: https://www.gnu.org/software/gsasl/
+Description: GNU SASL is an implementation of the Simple Authentication and Security Layer framework and a few common SASL mechanisms.
