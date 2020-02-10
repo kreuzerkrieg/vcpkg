@@ -7,9 +7,11 @@ vcpkg_from_git(
         REF c8cfe3e57e08f483056abcdfd37d46c4fe242b13
 )
 
+configure_file(${CURRENT_PORT_DIR}/bootstrap.sh ${SOURCE_PATH}/bootstrap.sh COPYONLY)
 vcpkg_configure_make(
         SOURCE_PATH ${SOURCE_PATH}
-        AUTOCONFIG
+        NO_DEBUG
+        PRERUN_SHELL bootstrap.sh
 )
 
 vcpkg_install_make()
