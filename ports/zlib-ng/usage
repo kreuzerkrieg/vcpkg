@@ -1,0 +1,4 @@
+The package zlib-ng is compatible with built-in CMake targets:
+
+    FIND_PACKAGE(zlibng REQUIRED)
+    TARGET_LINK_LIBRARIES(main PRIVATE ZLIB::ng) for linkage
