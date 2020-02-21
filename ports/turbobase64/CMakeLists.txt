@@ -45,10 +45,9 @@ else ()
                 $<TARGET_OBJECTS:base64_ssse3>)
 endif ()
 
-target_include_directories(base64 SYSTEM PUBLIC ${LIBRARY_DIR})
-
 # End of Yandex code
 
+target_include_directories(base64 SYSTEM PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>)
 set_target_properties(base64 PROPERTIES PUBLIC_HEADER "${CMAKE_SOURCE_DIR}/turbob64.h")
 
 install(TARGETS base64
