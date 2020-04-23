@@ -3,8 +3,8 @@ vcpkg_fail_port_install(ON_TARGET "UWP")
 vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
         REPO zlib-ng/zlib-ng
-        REF bd7d2226dde22fbd71477c96654934b0464981cb
-        SHA512 d35d614223c7f8ed261a4f28db6201e4c2f128d3a09de6f57a267d0706b7b895a9a5f9bfa8d11b05bd4a92a0c73d3c170cbbb1eb39668c028b3fbc54b027313d
+        REF 42aa81beafa2ea14cd780a9acf3359a0a09ca44b
+        SHA512 6de862a37ee690294e185de6d565c40d2300ab4ab9f71f206b6c36a7f78f9e1792e2c631e129620b5d1d68d3d13fb8235af35ec767893915442544a361f9b00e
         HEAD_REF master
 )
 
